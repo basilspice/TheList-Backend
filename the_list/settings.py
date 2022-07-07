@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'the_list.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'thelist',
+        'NAME': 'the_list',
         'USER': 'postgres',
         'PASSWORD': 'sei'
         
