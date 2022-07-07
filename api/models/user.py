@@ -12,8 +12,8 @@ class UserManager(BaseUserManager):
     # **extra_fields:  Just in case there are extra arguments passed.
     def create_user(self, email, password=None, **extra_fields):
         # Add a custom validation error
-        #if not email:
-         #   raise ValueError('User must have an email address') 
+        if not email:
+            raise ValueError('User must have an email address') 
         # Create a user from the UserModel
         # Use the normalize_email method from the BaseUserManager to
         # normalize the domain of the email
